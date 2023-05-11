@@ -39,6 +39,8 @@ function DirectAdmin_createServer($user, $params, $order)
             'package' => 'test',
             'ip' => $ip,
             'notify' => 'yes',
+            'brand_name' =>  config('app.name', 'Paymenter'),
+            'shipping_preference'  => 'NO_SHIPPING',
         ]
     );
     $result = $sock->fetch_parsed_body();
