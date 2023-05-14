@@ -12,6 +12,7 @@ Go to the paymenter admin panel and enable the extension you want to use.
 | --- | --- | --- | --- |
 | Mollie | [Mollie](https://mollie.com) payment gateway | @Almesaody | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/Mollie)
 | Xendit | [Xendit](https://xendit.com) payment gateway | @Almesaody | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/Xendit)
+| PayPal IPN | [PayPal](https://developer.paypal.com) IPN payment gateway | @CorwinDev | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/PayPal_IPN)
 | PayPal | [PayPal](https://developer.paypal.com) payment gateway | @Almesaody | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/PayPal)
 | Stripe | [Stripe](https://stripe.com) payment gateway | @Almesaody | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/Stipe)
 | Stripe Sofort | Direct sofort payment gateway | @Almesaody | [Link](https://github.com/Almesaody/Extensions/tree/main/Gateways/StripeSofort)
