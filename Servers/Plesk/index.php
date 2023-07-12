@@ -68,7 +68,7 @@ function Plesk_getUserConfig()
     ];
 }
 
-function Plesk_createServer($user, $params, $order, $configurableOptions)
+function Plesk_createServer($user, $params, $order)
 {
     $apiKey = Plesk_getApiKey();
     $host = ExtensionHelper::getConfig('Plesk', 'host');
@@ -178,4 +178,9 @@ function Plesk_terminateServer($user, $params)
     ])->withoutVerifying()->delete($host . '/api/v2/domains/' . Plesk_getDomainID($params['config']['domain']));
     $domain = json_decode($domain->body(), true);
     return $domain;
+}
+
+function Plesk_getLink($user, $params){
+    $host = ExtensionHelper::getConfig('Plesk', 'host');
+    return $host . '/smb/web/overview/id/' . Plesk_getDomainID($params['config']['domain']) . '/type/domain';
 }
